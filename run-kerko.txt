@@ -1,0 +1,38 @@
+
+
+cd Desktop/coes-bib
+cd bibfilter
+python -m venv env
+env\Scripts\activate.bat
+
+
+pip install pipenv
+pipenv install
+
+
+
+
+python -m venv env
+env\Scripts\activate
+pip install pipenv
+pip install kerko
+
+
+set FLASK_APP=app.py
+flask kerko sync
+flask run
+
+http://127.0.0.1:5000/bibliography/
+
+
+
+
+
+
+
+---
+
+cd desktop\ocs-bib
+python -m venv env
+env\Scripts\activate.bat
+pip install gunicorn

@@ -4,7 +4,7 @@ Created on Fri Dec 17 18:12:13 2021
 
 @author: Julio
 """
- 
+
 import pathlib
 import os
 
@@ -26,6 +26,6 @@ app.config['KERKO_COMPOSER'] = Composer()
 
 babel = Babel(app)
 bootstrap = Bootstrap(app)
-port = os.environ.get("PORT", 5000)
-app.run(debug=False, host="0.0.0.0", port=port)
+#port = os.environ.get("PORT", 5000)
+#app.run(debug=False, host="0.0.0.0", port=port)
 app.register_blueprint(kerko_blueprint, url_prefix='/bibliography')
