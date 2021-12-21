@@ -1,2 +1,1 @@
-Procfile
-web: python app2.py
+web: gunicorn app:app2
