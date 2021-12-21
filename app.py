@@ -21,11 +21,12 @@ app.config['KERKO_ZOTERO_API_KEY'] = 'Luoum41MvIMNqSLTitax7URA'  # Replace this 
 app.config['KERKO_ZOTERO_LIBRARY_ID'] = '2635555'  # Replace this value.
 app.config['KERKO_ZOTERO_LIBRARY_TYPE'] = 'group'  # Replace this value if necessary.
 app.config['KERKO_DATA_DIR'] = str(pathlib.Path(__file__).parent / 'data' / 'kerko')
-app.config['KERKO_FACET_COLLAPSING'] = 'True'
+#app.config['KERKO_FACET_COLLAPSING'] = 'false'
 app.config['KERKO_COMPOSER'] = Composer()
 
 babel = Babel(app)
 bootstrap = Bootstrap(app)
 #port = os.environ.get("PORT", 5000)
 #app.run(debug=False, host="0.0.0.0", port=port)
-app.register_blueprint(kerko_blueprint, url_prefix='/bibliography')
+#app.register_blueprint(kerko_blueprint, url_prefix='/bibliography')
+app.register_blueprint(kerko_blueprint)
