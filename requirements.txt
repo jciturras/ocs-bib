@@ -1,5 +1,3 @@
 flask
 gunicorn
 kerko
-Babel
-Bootstrap
